@@ -58,9 +58,13 @@ dns:
   
   # DNS 策略（国内域名使用国内 DNS）
   nameserver-policy:
-    'geosite:private,cn': 
+    'DOMAIN-SUFFIX,gs.com':  # 所有gs.com子域名走直连
       - https://223.5.5.5/dns-query
       - https://doh.pub/dns-query
+    'geosite:private,cn':    # 所有国内域名走直连
+      - https://223.5.5.5/dns-query
+      - https://doh.pub/dns-query
+
 
 # ============================================================================
 # 规则集配置
@@ -481,7 +485,7 @@ rules:
   - DOMAIN,v2rayse.com,节点选择                  # V2rayse 节点工具
 
   # 特别预留（公司内网等）
-  - DOMAIN,news.gs.com,全局直连
+  - DOMAIN-SUFFIX,gs.com,全局直连
   - DOMAIN,v.qq.com,全局直连
   
   # Loyalsoldier 规则集
