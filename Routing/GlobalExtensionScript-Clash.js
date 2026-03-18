@@ -7,8 +7,6 @@ const domesticNameservers = [
 const foreignNameservers = [
   "https://1.1.1.1/dns-query", // CloudflareDNS
   "https://8.8.4.4/dns-query" // GoogleDNS  
-  
-
 ];
 // DNS配置
 const dnsConfig = {
@@ -188,6 +186,8 @@ const rules = [
   
   // 特别预留（公司内网等）
   "DOMAIN,news.gs.com,全局直连",
+  "DOMAIN,v.qq.com,全局直连",
+  
   
   // Loyalsoldier 规则集
   // 1、本地
@@ -334,7 +334,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "哔哩哔哩港澳台",
       "type": "select",
-      "proxies": ["全局直连","节点选择"],
+      "proxies": ["节点选择"],
       "include-all": true,
       "filter": "^(?!.*(官网|套餐|流量|异常|剩余)).*$",
       "icon": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/icon/bilibili.svg"
