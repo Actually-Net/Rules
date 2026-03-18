@@ -188,7 +188,6 @@ const rules = [
   "DOMAIN,news.gs.com,全局直连",
   "DOMAIN,v.qq.com,全局直连",
   
-  
   // Loyalsoldier 规则集
   // 1、本地
   "RULE-SET,applications,全局直连",
