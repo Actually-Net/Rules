@@ -484,6 +484,11 @@ rules:
   - DOMAIN-SUFFIX,github.io,节点选择             # Github Pages
   - DOMAIN,v2rayse.com,节点选择                  # V2rayse 节点工具
 
+  # 内网直连
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+
   # 特别预留（公司内网等）
   - DOMAIN-SUFFIX,gs.com,全局直连
   - DOMAIN,video.qq.com,全局直连
@@ -519,6 +524,7 @@ rules:
   - GEOSITE,CN,全局直连
   - GEOIP,LAN,全局直连,no-resolve
   - GEOIP,CN,全局直连,no-resolve
+
   # 8、兜底漏网之鱼（最后的兜底规则）
   - MATCH,漏网之鱼
   
