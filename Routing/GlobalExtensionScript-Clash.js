@@ -183,6 +183,11 @@ const rules = [
   "DOMAIN-SUFFIX,xn--ngstr-lra8j.com,节点选择", // Google Play下载服务
   "DOMAIN-SUFFIX,github.io,节点选择", // Github Pages
   "DOMAIN,v2rayse.com,节点选择", // V2rayse节点工具
+
+  // 内网直连
+  "IP-CIDR,10.0.0.0/8,全局直连",
+  "IP-CIDR,172.16.0.0/12,全局直连",
+  "IP-CIDR,192.168.0.0/16,全局直连",
   
   // 特别预留（公司内网等）
   "DOMAIN-SUFFIX,gs.com,全局直连",
