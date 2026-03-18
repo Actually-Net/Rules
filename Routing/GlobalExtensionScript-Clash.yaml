@@ -48,8 +48,8 @@ dns:
   
   # 加密 DNS 解析服务器（解析国外Doh DNS服务器域名）
   proxy-server-nameserver:
-    - https://1.1.1.1/dns-query             # Cloudflare DNS
-    - https://8.8.4.4/dns-query             # Google DNS
+    - 1.1.1.1             # Cloudflare DNS
+    - 8.8.4.4             # Google DNS
   
   # 直连 DNS 服务器
   direct-nameserver:
