@@ -384,8 +384,8 @@ proxy-groups:
   - name: 哔哩哔哩港澳台
     type: select
     proxies:
-      - 全局直连
       - 节点选择
+      - 全局直连
     include-all: true
     filter: '^(?!.*(官网|套餐|流量|异常|剩余)).*$'
     interval: 300
@@ -483,6 +483,9 @@ rules:
 
   # 特别预留（公司内网等）
   - DOMAIN,news.gs.com,全局直连
+  - DOMAIN,v.qq.com,全局直连
+  
+  
 
   # Loyalsoldier 规则集
   # 1、本地
