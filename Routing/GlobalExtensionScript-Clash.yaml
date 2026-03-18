@@ -491,9 +491,9 @@ rules:
   - RULE-SET,reject,广告过滤
   # 3、细化分流（最高优先）
   - RULE-SET,ai,AI
-  - RULE-SET,tiktok,TikTok
   - RULE-SET,youtube,YouTube
   - RULE-SET,netflix,Netflix
+  - RULE-SET,tiktok,TikTok
   - RULE-SET,spotify,Spotify
   - RULE-SET,bahamut,动画疯
   - RULE-SET,bilibilihmt,哔哩哔哩港澳台
