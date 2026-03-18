@@ -7,8 +7,7 @@ const domesticNameservers = [
 const foreignNameservers = [
   "https://208.67.222.222/dns-query", // OpenDNS
   "https://8.8.4.4/dns-query", // GoogleDNS  
-  "https://1.1.1.1/dns-query", // CloudflareDNS
-  "https://77.88.8.8/dns-query", //YandexDNS
+  "https://1.1.1.1/dns-query" // CloudflareDNS
 
 ];
 // DNS配置
@@ -187,32 +186,40 @@ const rules = [
   "DOMAIN-SUFFIX,github.io,节点选择", // Github Pages
   "DOMAIN,v2rayse.com,节点选择", // V2rayse节点工具
   // Loyalsoldier 规则集
+  // 1、本地
   "RULE-SET,applications,全局直连",
   "RULE-SET,private,全局直连",
+  // 2、广告过滤
   "RULE-SET,reject,广告过滤",
-  "RULE-SET,icloud,微软服务",
-  "RULE-SET,apple,苹果服务",
+  // 3、细化分流（最高优先级）
+  "RULE-SET,AI,AI",
   "RULE-SET,YouTube,YouTube",
   "RULE-SET,Netflix,Netflix",
-  "RULE-SET,bahamut,动画疯",
-  "RULE-SET,Spotify,Spotify",
-  "RULE-SET,BilibiliHMT,哔哩哔哩港澳台",
-  "RULE-SET,AI,AI",
   "RULE-SET,TikTok,TikTok",
+  "RULE-SET,Spotify,Spotify",
+  "RULE-SET,bahamut,动画疯",
+  "RULE-SET,BilibiliHMT,哔哩哔哩港澳台",
+  // 4、服务类
   "RULE-SET,google,谷歌服务",
+  "RULE-SET,icloud,微软服务",
+  "RULE-SET,apple,苹果服务",
+  "RULE-SET,telegramcidr,Telegram,no-resolve",
+  // 5、代理类1
   "RULE-SET,proxy,节点选择",
   "RULE-SET,gfw,节点选择",
+  // 6、非中国域名
   "RULE-SET,tld-not-cn,节点选择",
+  // 7、直连
   "RULE-SET,direct,全局直连",
   "RULE-SET,lancidr,全局直连,no-resolve",
   "RULE-SET,cncidr,全局直连,no-resolve",
-  "RULE-SET,telegramcidr,电报消息,no-resolve",
-  // 其他规则
   "GEOSITE,CN,全局直连",
   "GEOIP,LAN,全局直连,no-resolve",
   "GEOIP,CN,全局直连,no-resolve",
+  // 8、兜底漏网之鱼（最后的兜底规则）
   "MATCH,漏网之鱼"
 ];
+
 // 代理组通用配置
 const groupBaseOption = {
   "interval": 300,
@@ -247,11 +254,43 @@ function main(config) {
     },
     {
       ...groupBaseOption,
+      "name": "AI",
+      "type": "select",
+      "include-all": true,
+      "proxies": ["节点选择"],
+      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/chatgpt.svg"
+    },
+    {
+      ...groupBaseOption,
       "name": "谷歌服务",
       "type": "select",
       "proxies": ["节点选择","全局直连"],
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/google.svg"
+    },
+    {
+      ...groupBaseOption,
+      "name": "微软服务",
+      "type": "select",
+      "proxies": ["全局直连","节点选择"],
+      "include-all": true,
+      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/microsoft.svg"
+    },
+    {
+      ...groupBaseOption,
+      "name": "苹果服务",
+      "type": "select",
+      "proxies": ["节点选择","全局直连"],
+      "include-all": true,
+      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/apple.svg"
+    },
+    {
+      ...groupBaseOption,
+      "name": "Telegram",
+      "type": "select",
+      "proxies": ["节点选择","全局直连"],
+      "include-all": true,
+      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/telegram.svg"
     },
     {
       ...groupBaseOption,
@@ -269,22 +308,7 @@ function main(config) {
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/icon/netflix.svg"
     },
-    {
-      ...groupBaseOption,
-      "name": "电报消息",
-      "type": "select",
-      "proxies": ["节点选择","全局直连"],
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/telegram.svg"
-    },
-    {
-      ...groupBaseOption,
-      "name": "AI",
-      "type": "select",
-      "include-all": true,
-      "proxies": ["节点选择"],
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/chatgpt.svg"
-    },
+    
     {
       ...groupBaseOption,
       "name": "TikTok",
@@ -292,22 +316,6 @@ function main(config) {
       "include-all": true,
       "proxies": ["节点选择"],
       "icon": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/icon/tiktok.svg"
-    },
-    {
-      ...groupBaseOption,
-      "name": "微软服务",
-      "type": "select",
-      "proxies": ["全局直连","节点选择"],
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/microsoft.svg"
-    },
-    {
-      ...groupBaseOption,
-      "name": "苹果服务",
-      "type": "select",
-      "proxies": ["节点选择","全局直连"],
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/apple.svg"
     },
     {
       ...groupBaseOption,
@@ -337,13 +345,6 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "广告过滤",
-      "type": "select",
-      "proxies": ["REJECT", "DIRECT"],
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/bug.svg"
-    },
-    {
-      ...groupBaseOption,
       "name": "全局直连",
       "type": "select",
       "proxies": ["DIRECT","节点选择"],
@@ -356,6 +357,13 @@ function main(config) {
       "type": "select",
       "proxies": ["REJECT", "DIRECT"],
       "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"
+    },
+    {
+      ...groupBaseOption,
+      "name": "广告过滤",
+      "type": "select",
+      "proxies": ["REJECT", "DIRECT"],
+      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/bug.svg"
     },
     {
       ...groupBaseOption,
