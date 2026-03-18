@@ -385,7 +385,6 @@ proxy-groups:
     type: select
     proxies:
       - 节点选择
-      - 全局直连
     include-all: true
     filter: '^(?!.*(官网|套餐|流量|异常|剩余)).*$'
     interval: 300
