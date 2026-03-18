@@ -185,6 +185,10 @@ const rules = [
   "DOMAIN-SUFFIX,xn--ngstr-lra8j.com,节点选择", // Google Play下载服务
   "DOMAIN-SUFFIX,github.io,节点选择", // Github Pages
   "DOMAIN,v2rayse.com,节点选择", // V2rayse节点工具
+  
+  // 特别预留（公司内网等）
+  "DOMAIN,news.gs.com,全局直连",
+  
   // Loyalsoldier 规则集
   // 1、本地
   "RULE-SET,applications,全局直连",
