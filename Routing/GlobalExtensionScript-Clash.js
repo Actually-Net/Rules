@@ -5,9 +5,9 @@ const domesticNameservers = [
 ];
 // 国外DNS服务器
 const foreignNameservers = [
-  "https://208.67.222.222/dns-query", // OpenDNS
-  "https://8.8.4.4/dns-query", // GoogleDNS  
-  "https://1.1.1.1/dns-query" // CloudflareDNS
+  "https://1.1.1.1/dns-query", // CloudflareDNS
+  "https://8.8.4.4/dns-query" // GoogleDNS  
+  
 
 ];
 // DNS配置
