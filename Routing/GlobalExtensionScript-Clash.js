@@ -185,8 +185,8 @@ const rules = [
   "DOMAIN,v2rayse.com,节点选择", // V2rayse节点工具
   
   // 特别预留（公司内网等）
-  "DOMAIN,news.gs.com,全局直连",
-  "DOMAIN,v.qq.com,全局直连",
+  "DOMAIN-SUFFIX,gs.com,全局直连",
+  "DOMAIN,video.qq.com,全局直连",
   
   // Loyalsoldier 规则集
   // 1、本地
