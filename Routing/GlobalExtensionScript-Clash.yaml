@@ -487,6 +487,7 @@ rules:
   # 特别预留（公司内网等）
   - DOMAIN-SUFFIX,gs.com,全局直连
   - DOMAIN,video.qq.com,全局直连
+  - DOMAIN-KEYWORD,squad,全局直连                 #squad直连
   
   # Loyalsoldier 规则集
   # 1、本地
