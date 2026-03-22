@@ -45,11 +45,11 @@ const dnsConfig = {
   //  解析直连加密DNS域名
   "default-nameserver": ["223.5.5.5","1.2.4.8"],
   "nameserver": [...foreignNameservers],
-  //  解析代理加密DNS域名
+  //  解析代理节点域名 / 代理链路相关域名
   "proxy-server-nameserver":["1.1.1.1","8.8.4.4"],
   "direct-nameserver":[...domesticNameservers],
   "nameserver-policy": {
-  "geosite:private,cn": domesticNameservers
+    "geosite:private,cn": domesticNameservers
   }
 };
 
@@ -355,29 +355,27 @@ const ruleProviders = {
 ///////////////////////////////////////////////////////////////////////////////////
 
 const rules = [
-  //  自定义规则
+  //  1、本地直连
+  "IP-CIDR,10.0.0.0/8,全局直连,no-resolve",
+  "IP-CIDR,172.16.0.0/12,全局直连,no-resolve",
+  "IP-CIDR,192.168.0.0/16,全局直连,no-resolve",
+  "RULE-SET,applications,全局直连",
+  "RULE-SET,private,全局直连",
+
+  //  2、广告过滤
+  "RULE-SET,reject,广告过滤",
+
+  //  3、自定义规则
   "DOMAIN-SUFFIX,googleapis.cn,节点选择", //  Google服务
   "DOMAIN-SUFFIX,gstatic.com,节点选择", //  Google静态资源
   "DOMAIN-SUFFIX,xn--ngstr-lra8j.com,节点选择", //  Google Play下载服务
   "DOMAIN-SUFFIX,github.io,节点选择", //  Github Pages
   "DOMAIN,v2rayse.com,节点选择", //  V2rayse节点工具
-
-  //  内网直连
-  "IP-CIDR,10.0.0.0/8,全局直连,no-resolve",
-  "IP-CIDR,172.16.0.0/12,全局直连,no-resolve",
-  "IP-CIDR,192.168.0.0/16,全局直连,no-resolve",
-  
-  //  特别预留（公司内网等）
   "DOMAIN-SUFFIX,gs.com,全局直连",
   "DOMAIN,video.qq.com,全局直连",
   "DOMAIN-KEYWORD,squad,全局直连",  //  Squad直连
   
-  //  1、本地
-  "RULE-SET,applications,全局直连",
-  "RULE-SET,private,全局直连",
-  //  2、广告过滤
-  "RULE-SET,reject,广告过滤",
-  //  3、细化分流（最高优先级）
+  //  4、细化分流
   "RULE-SET,AI,AI",
   "RULE-SET,YouTube,YouTube",
   "RULE-SET,Netflix,Netflix",
@@ -385,24 +383,24 @@ const rules = [
   "RULE-SET,Spotify,Spotify",
   "RULE-SET,bahamut,动画疯",
   "RULE-SET,BilibiliHMT,哔哩哔哩港澳台",
-  //  4、服务类
+  //  5、服务类
   "RULE-SET,google,谷歌服务",
   "RULE-SET,icloud,苹果服务",
   "RULE-SET,apple,苹果服务",
   "RULE-SET,telegramcidr,Telegram,no-resolve",
-  //  5、代理类
+  //  6、代理类
   "RULE-SET,proxy,节点选择",
   "RULE-SET,gfw,节点选择",
-  //  6、非中国域名
+  //  7、非中国域名
   "RULE-SET,tld-not-cn,节点选择",
-  //  7、直连
+  //  8、直连
   "RULE-SET,direct,全局直连",
   "RULE-SET,lancidr,全局直连,no-resolve",
   "RULE-SET,cncidr,全局直连,no-resolve",
   "GEOSITE,CN,全局直连",
   "GEOIP,LAN,全局直连,no-resolve",
   "GEOIP,CN,全局直连,no-resolve",
-  //  8、兜底（最后的兜底规则）
+  //  9、兜底（最后的兜底规则）
   "MATCH,漏网之鱼"
 ];
 
