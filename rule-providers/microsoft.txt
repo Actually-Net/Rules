@@ -13,6 +13,9 @@ payload:
   - 'login.microsoft.com'
   - 'auth.gfx.ms'
 
+  # Microsoft Graph / Azure
+  - 'graph.microsoft.com'
+
   # Microsoft core / Office / M365 basic services
   - '+.office.com'
   - '+.office.net'
