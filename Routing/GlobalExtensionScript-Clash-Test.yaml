@@ -440,7 +440,7 @@ proxy-groups:
   - name: 微软服务
     type: select
     proxies:
-      - 全局直连
+      - DIRECT
       - 节点选择
     include-all: true
     interval: 300
