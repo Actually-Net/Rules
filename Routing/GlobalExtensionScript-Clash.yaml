@@ -36,7 +36,7 @@ dns:
     #  微信快速登录检测失败
     - 'localhost.work.weixin.qq.com'
   
-  #  解析直连节点域名 / 直连链路相关域名
+  #  解析直连 DNS 域名
   default-nameserver:
     - 223.5.5.5
     - 1.2.4.8
@@ -496,7 +496,7 @@ rules:
   
   #  5、服务类
   - RULE-SET,google,谷歌服务
-  - RULE-SET,icloud,微软服务
+  - RULE-SET,icloud,苹果服务
   - RULE-SET,telegramcidr,Telegram,no-resolve
   - RULE-SET,apple,苹果服务
   
