@@ -17,13 +17,6 @@ payload:
   - 'graph.microsoft.com'
 
   # Microsoft core / Office / M365 basic services
-  - '+.office.com'
-  - '+.office.net'
-  - '+.office365.com'
-  - '+.outlook.com'
-  - 'outlook.live.com'
-  - '+.sharepoint.com'
-  - '+.sharepointonline.com'
   - '+.onedrive.com'
   - 'onedrive.live.com'
   - 'officeapps.live.com'
