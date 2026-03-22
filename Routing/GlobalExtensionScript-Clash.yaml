@@ -525,13 +525,20 @@ rules:
   - MATCH,漏网之鱼
   
 # ============================================================================
-# 其他全局配置（可选）
+# 全局配置（可选）
 # ============================================================================
 # 注意：这些配置可能已经在节点订阅中定义，如果有冲突，覆写规则优先
 # 如果需要启用以下配置，请取消注释
 
+# mixed-port: 7890
+# allow-lan: false
 # mode: rule
 # log-level: info
-# mixed-port: 7890
-# allow-lan: true
-# ipv6: false
+# external-controller: 127.0.0.1:9090
+# tun:
+#   enable: true
+#   stack: system
+#   auto-route: true
+#   auto-detect-interface: true
+#   dns-hijack:
+#     - any:53
