@@ -7,9 +7,6 @@ payload:
   - 'DOMAIN-KEYWORD,diabloimmortal'
 
   # Warframe / Digital Extremes
-  - 'DOMAIN-SUFFIX,warframe.com'
-  - 'DOMAIN-SUFFIX,digitalextremes.com'
-  - 'DOMAIN-KEYWORD,warframe'
 
   # Riot Games / Valorant / League ecosystem
   - 'DOMAIN-SUFFIX,riotgames.com'
