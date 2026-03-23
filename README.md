@@ -8,12 +8,12 @@
 1、测试版配置文件带Test尾缀，在正式版基础上细化分流，基本属于增量，可能存在一些问题，谨慎使用
 
 # 链接
+  健全版
 ```javascript
-#  健全版
 https://fastly.jsdelivr.net/gh/Actually-Net/Rules@Rules/Routing/GlobalExtensionScript-Clash.yaml
 ```
+  测试版
 ```javascript
-#  测试版
 https://fastly.jsdelivr.net/gh/Actually-Net/Rules@Rules/Routing/GlobalExtensionScript-Clash-Test.yaml
 ```
 
