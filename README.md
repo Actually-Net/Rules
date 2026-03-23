@@ -1,8 +1,20 @@
-#  规则适用范围及功能模块组成
-   1、适配各类Clash类型代理工具
-   2、配置国内外DNS加密及DNS分流，避免DNS泄露
-   3、配置自定义代理组，基于业务类型选择出口
-   4、集成具有良好使用量及口碑的第三方规则集和自定义规则集实现分流
+# 说明
+1. 适配各类Clash类型代理工具 
+2. 配置国内外DNS加密及DNS分流，避免DNS泄露 
+3. 配置自定义代理组，基于业务类型选择出口 
+4. 集成具有良好使用量及口碑的第三方规则集和自定义规则集实现分流
 
-#  正式版测试版
-   1、测试版配置文件带Test尾缀，在正式版基础上细化分流，基本属于增量，可能存在一些问题，谨慎使用
+# 版本
+1、测试版配置文件带Test尾缀，在正式版基础上细化分流，基本属于增量，可能存在一些问题，谨慎使用
+
+# 链接
+```javascript
+#  健全版
+https://fastly.jsdelivr.net/gh/Actually-Net/Rules@Rules/Routing/GlobalExtensionScript-Clash.yaml
+```
+```javascript
+#  测试版
+https://fastly.jsdelivr.net/gh/Actually-Net/Rules@Rules/Routing/GlobalExtensionScript-Clash-Test.yaml
+```
+
+
