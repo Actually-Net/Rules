@@ -2,6 +2,7 @@ payload:
   # Squad / EOS process rules
   - 'PROCESS-NAME,EOSOverlayRenderer-Win64-Shipping.exe'
   - 'PROCESS-NAME,SquadGame.exe'
+  - 'PROCESS-NAME,EasyAntiCheat_EOS.exe'
 
   # Steam / Valve direct domains
   - 'DOMAIN-SUFFIX,steampowered.com'
@@ -11,3 +12,4 @@ payload:
   - 'DOMAIN-SUFFIX,steamusercontent.com'
   - 'DOMAIN-SUFFIX,steamserver.net'
   - 'DOMAIN-SUFFIX,steamgames.com'
+  - 'DOMAIN-SUFFIX,steam-chat.com'
