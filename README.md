@@ -18,10 +18,10 @@ https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/overrides/release/GlobalC
 https://raw.githubusercontent.com/Actually-Net/rules/main/overrides/release/GlobalCoverage.yaml
 ```
   GlobalExtension.js（全局拓展脚本）
-```javascript
+```yaml
 https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/overrides/release/GlobalExtension.js
 ```
-```javascript
+```yaml
 https://raw.githubusercontent.com/Actually-Net/rules/main/overrides/release/GlobalExtension.js
 ```
   GlobalCoverage.yaml（全局覆写配置-dev）
