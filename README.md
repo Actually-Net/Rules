@@ -26,7 +26,7 @@ https://raw.githubusercontent.com/Actually-Net/rules/main/overrides/release/Glob
 ```
   GlobalCoverage.yaml（全局覆写配置-dev）
 ```yaml
-https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/Routing/overrides/dev/GlobalCoverage.yaml
+https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/overrides/dev/GlobalCoverage.yaml
 ```
 ```yaml
 https://raw.githubusercontent.com/Actually-Net/rules/main/overrides/dev/GlobalCoverage.yaml
