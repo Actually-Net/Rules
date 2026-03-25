@@ -253,5 +253,3 @@ payload:
   - '+.translate.google.com'
   - '+.meet.google.com'
   - '+.calendar.google.com'
-
-  # Excluded on purpose: youtube.com / youtu.be / ytimg.com / googlevideo.com
