@@ -1,9 +1,23 @@
 payload:
+  #  国际免费影视
   - 'xiaoheimi.cc'
   - 'olevod.com'
   - 'ylsp.tv'
+
+  #  Microsoft代理服务（必须代理才能使用）
   - 'm365.cloud.microsoft'
+  - '+.bing.com'
+  - '+.bing.net'
+  - 'copilot.microsoft.com'
+  - 'designer.microsoft.com'
+  - 'create.microsoft.com'
+  - 'locations.microsoft.com'
+  - 'openai.azure.com'
+  - 'linkedin.com'
+  - '+.licdn.com'
 
-
+  # OneDrive 商业版/SharePoint (可选)
+  #  - '+.sharepoint.com'
+  #  - '+.1drv.com'
+  #  - '+.onedrive.com'
   
-  # - ''
