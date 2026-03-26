@@ -616,7 +616,6 @@ rule-providers:
 #  ============================================================================
 rules:
   #  1、本地直连
-  - AND,((NETWORK,UDP),(DST-PORT,443)),广告过滤  #  强制拦截 UDP 443 
   - IP-CIDR,10.0.0.0/8,全局直连,no-resolve
   - IP-CIDR,172.16.0.0/12,全局直连,no-resolve
   - IP-CIDR,192.168.0.0/16,全局直连,no-resolve
@@ -624,6 +623,7 @@ rules:
   - RULE-SET,private,全局直连
 
   #  2、广告过滤
+  - AND,((NETWORK,UDP),(DST-PORT,443)),广告过滤  #  强制拦截 UDP 443 
   - RULE-SET,reject,广告过滤
   - RULE-SET,diyreject,广告过滤                  #  补充拦截
 
