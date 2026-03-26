@@ -3,4 +3,7 @@ payload:
   - 'policy.samsungcloud.com'
   - 'play.samsungcloudcn.com'
 
+  #  DIY
+  - '+.actually.vip'
+
   # - ''
