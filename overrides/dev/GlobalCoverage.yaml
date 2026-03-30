@@ -58,11 +58,13 @@ dns:
   #  Fake-IP 过滤（不经过 Fake-IP）
   fake-ip-filter:
     #  本地主机/设备
-    - '*.lan'
     - 'localhost'
     - '+.lan'
     - '+.local'
-    #  Windows 网络出现小地球图标
+    - '*.localhost'
+    - '*.localdomain'
+    - '*.home.arpa'
+    #  Windows 网络探测
     - '+.msftconnecttest.com'
     - '+.msftncsi.com'
     #  QQ 快速登录检测失败
@@ -76,6 +78,9 @@ dns:
     - 'pool.ntp.org'
     #  微信快速登录检测失败
     - 'localhost.work.weixin.qq.com'
+    #  STUN / 游戏机 / 语音通话
+    - 'stun.*'
+    - 'srv.nintendo.net'
 
   #  DNS 策略（国内域名使用国内 DNS,优先于 nameserver/fallback 查询）
   nameserver-policy:
