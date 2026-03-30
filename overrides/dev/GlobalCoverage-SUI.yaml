@@ -161,7 +161,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-    #  include-all: true
+    include-all: true
     interval: 300
     timeout: 3000
     url: https://www.google.com/generate_204
@@ -390,7 +390,7 @@ rule-providers:
     type: http
     behavior: classical
     format: yaml
-    url: https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/rule-providers/directgame.txt
+    url: https://raw.githubusercontent.com/Actually-Net/rules/main/rule-providers/directgame.txt
     path: ./ruleset/Actually-Nat/directgame.yaml
     interval: 86400
 
@@ -398,7 +398,7 @@ rule-providers:
     type: http
     behavior: classical
     format: yaml
-    url: https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/rule-providers/proxygame.txt
+    url: https://raw.githubusercontent.com/Actually-Net/rules/main/rule-providers/proxygame.txt
     path: ./ruleset/Actually-Nat/proxygame.yaml
     interval: 86400
 
@@ -406,7 +406,7 @@ rule-providers:
     type: http
     behavior: domain
     format: yaml
-    url: https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/rule-providers/diydirect.txt
+    url: https://raw.githubusercontent.com/Actually-Net/rules/main/rule-providers/diydirect.txt
     path: ./ruleset/Actually-Nat/diydirect.yaml
     interval: 86400
 
@@ -414,7 +414,7 @@ rule-providers:
     type: http
     behavior: domain
     format: yaml
-    url: https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/rule-providers/diyproxy.txt
+    url: https://raw.githubusercontent.com/Actually-Net/rules/main/rule-providers/diyproxy.txt
     path: ./ruleset/Actually-Nat/diyproxy.yaml
     interval: 86400
 
@@ -422,7 +422,7 @@ rule-providers:
     type: http
     behavior: domain
     format: yaml
-    url: https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/rule-providers/diyreject.txt
+    url: https://raw.githubusercontent.com/Actually-Net/rules/main/rule-providers/diyreject.txt
     path: ./ruleset/Actually-Nat/diyreject.yaml
     interval: 86400
 
@@ -430,7 +430,7 @@ rule-providers:
     type: http
     behavior: domain
     format: yaml
-    url: https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/rule-providers/cnmedia.txt
+    url: https://raw.githubusercontent.com/Actually-Net/rules/main/rule-providers/cnmedia.txt
     path: ./ruleset/Actually-Nat/cnmedia.yaml
     interval: 86400
 
@@ -438,7 +438,7 @@ rule-providers:
     type: http
     behavior: domain
     format: yaml
-    url: https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/rule-providers/youtube.txt
+    url: https://raw.githubusercontent.com/Actually-Net/rules/main/rule-providers/youtube.txt
     path: ./ruleset/Actually-Nat/youtube.yaml
     interval: 86400
 
@@ -446,7 +446,7 @@ rule-providers:
     type: http
     behavior: domain
     format: yaml
-    url: https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/rule-providers/google.txt
+    url: https://raw.githubusercontent.com/Actually-Net/rules/main/rule-providers/google.txt
     path: ./ruleset/Actually-Nat/google.yaml
     interval: 86400
 
@@ -454,7 +454,7 @@ rule-providers:
     type: http
     behavior: domain
     format: yaml
-    url: https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/rule-providers/microsoft.txt
+    url: https://raw.githubusercontent.com/Actually-Net/rules/main/rule-providers/microsoft.txt
     path: ./ruleset/Actually-Nat/microsoft.yaml
     interval: 86400
 
