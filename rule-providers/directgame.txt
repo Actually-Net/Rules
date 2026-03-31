@@ -18,4 +18,4 @@ payload:
   - 'DOMAIN-SUFFIX,content-zhpt.wf.qq.com'
 
   # Steam-DIRECT
-  - '+.eccdnx.com'
+  - 'DOMAIN-SUFFIX,eccdnx.com'
