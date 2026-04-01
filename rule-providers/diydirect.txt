@@ -6,8 +6,8 @@ payload:
   #  DIY
   - '+.actually.vip'
   - '+.onejailbreak.com'
-  - '+.gs.com'
-  - '+.gamesci.com.cn'
+  - '*.gs.com'
+  - '*.gamesci.com.cn'
 
 
   #  Alibaba
