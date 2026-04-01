@@ -49,7 +49,7 @@ dns:
   listen: 0.0.0.0:1053
   ipv6: false
   prefer-h3: false
-  respect-rules: true
+  respect-rules: false
   use-system-hosts: false
   cache-algorithm: arc
   enhanced-mode: fake-ip
@@ -64,12 +64,6 @@ dns:
     - '*.localhost'
     - '*.localdomain'
     - '*.home.arpa'
-    #  Windows 网络探测
-    - '+.msftconnecttest.com'
-    - '+.msftncsi.com'
-    #  QQ 快速登录检测失败
-    - 'localhost.ptlogin2.qq.com'
-    - 'localhost.sec.qq.com'
     #  追加条目
     - '+.in-addr.arpa'
     - '+.ip6.arpa'
@@ -78,10 +72,7 @@ dns:
     - 'pool.ntp.org'
     - '+.example.org'
     #  部分内网预留
-    - '*.gs.com'
-    - '*.gamesci.com.cn'
-    #  微信快速登录检测失败
-    - 'localhost.work.weixin.qq.com'
+    - 'rule-set:diydirect'
     #  STUN / 游戏机 / 语音通话
     - 'stun.*'
     - 'srv.nintendo.net'
