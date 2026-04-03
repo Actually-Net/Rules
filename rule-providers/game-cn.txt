@@ -1,0 +1,29 @@
+﻿payload:
+  # Squad / EOS process rules
+  # - 'PROCESS-NAME,EOSOverlayRenderer-Win64-Shipping.exe'
+  # - 'PROCESS-NAME,SquadGame.exe'
+  # - 'PROCESS-NAME,EasyAntiCheat_EOS.exe'
+
+  # Wegame
+  - PROCESS-NAME,wegame.exe
+  - PROCESS-NAME,browser.exe
+  - DOMAIN-SUFFIX,wegame.com.cn
+  - DOMAIN-SUFFIX,game.qq.com
+  - DOMAIN-SUFFIX,wegame.gtimg.com
+  - DOMAIN-SUFFIX,wegame.gtimg.com.cn
+  - DOMAIN-SUFFIX,tgp.qq.com
+  - DOMAIN-SUFFIX,tgp_game.qq.com
+  - DOMAIN-SUFFIX,wegameplus.qq.com
+
+  # Warframe-Wegame
+  - DOMAIN-SUFFIX,wf.qq.com
+  - AND,((NETWORK,UDP),(DST-PORT,4950/4955))
+  - AND,((NETWORK,UDP),(DST-PORT,4960/4965))
+  - AND,((NETWORK,UDP),(DST-PORT,4970/4985/4990/4995/3074/3080))
+
+  # Steam-DIRECT
+  - GEOSITE,steam@cn
+  - DOMAIN-SUFFIX,eccdnx.com
+
+  # all(中国区)
+  - GEOSITE,category-games@cn
