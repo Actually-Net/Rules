@@ -1,0 +1,77 @@
+﻿payload:
+  # Steam 商店、社区、API
+  - DOMAIN-SUFFIX,steamcommunity.com
+  - DOMAIN-SUFFIX,steampowered.com
+  - DOMAIN-SUFFIX,store.steampowered.com
+  - DOMAIN-SUFFIX,api.steampowered.com
+  - DOMAIN-SUFFIX,steamstatic.com
+  - DOMAIN-SUFFIX,steamusercontent.com
+  - DOMAIN-SUFFIX,steamcharts.com
+  - DOMAIN-SUFFIX,steam-api.com
+  - DOMAIN-SUFFIX,steam-chat.com
+  - DOMAIN-SUFFIX,steam.apac.qtlglb.com
+  - DOMAIN-SUFFIX,steam.cdn.on.net
+  - DOMAIN-SUFFIX,steam.cdn.orcon.net.nz
+  - DOMAIN-SUFFIX,steam.cdn.slingshot.co.nz
+  - DOMAIN-SUFFIX,steam.cdn.webra.ru
+  - DOMAIN-SUFFIX,steam.eca.qtlglb.com
+  - DOMAIN-SUFFIX,steam.naeu.qtlglb.com
+  - DOMAIN-SUFFIX,steam.ru.qtlglb.com
+  - DOMAIN-SUFFIX,steam.tv
+  - DOMAIN-SUFFIX,steamcontent.com
+  - DOMAIN-SUFFIX,steamdb.info
+  - DOMAIN-SUFFIX,steamdeck.com
+  - DOMAIN-SUFFIX,steamgames.com
+  - DOMAIN-SUFFIX,steaminventoryhelper.com
+  - DOMAIN-SUFFIX,steamladder.com
+  - DOMAIN-SUFFIX,steamofporn.com
+  - DOMAIN-SUFFIX,steamserver.net
+  - DOMAIN-SUFFIX,steamunlocked.net
+  - DOMAIN-SUFFIX,steamygamer.com
+  - GEOSITE,steampowered
+
+  #  EA 橘子网络
+  - GEOSITE,ea
+
+  #  Blizzard / Battle.net / Diablo Immortal
+  - DOMAIN-SUFFIX,battle.net
+  - DOMAIN-SUFFIX,battlenet.com
+  - DOMAIN-SUFFIX,blizzard.com
+  - DOMAIN-SUFFIX,blzstatic.com
+  - DOMAIN-KEYWORD,diabloimmortal
+  - GEOSITE,blizzard
+
+  #  Epic Games 商城与虚幻引擎网络
+  - DOMAIN-SUFFIX,epicgames.com
+  - DOMAIN-SUFFIX,fortnite.com
+  - DOMAIN-KEYWORD,epicgames
+  - DOMAIN-KEYWORD,fortnite
+  - GEOSITE,epicgames
+
+  #  任天堂在线联机及商店
+  - GEOSITE,nintendo
+
+  #  索尼 playstation
+  - GEOSITE,playstation
+
+  #  微软 XBOX 联网对战网络
+  - GEOSITE,xbox
+
+  # Riot Games / Valorant / League ecosystem
+  - DOMAIN-SUFFIX,riotgames.com
+  - DOMAIN-SUFFIX,leagueoflegends.com
+  - DOMAIN-SUFFIX,playvalorant.com
+  - DOMAIN-KEYWORD,riot
+  - DOMAIN-KEYWORD,valorant
+
+  # Roblox
+  - DOMAIN-SUFFIX,roblox.com
+  - DOMAIN-KEYWORD,roblox
+
+  # Nintendo overseas services
+  - DOMAIN-SUFFIX,nintendo.com
+  - DOMAIN-SUFFIX,nintendo.net
+
+  # Supercell overseas services
+  - DOMAIN-SUFFIX,supercell.com
+  - DOMAIN-KEYWORD,supercell
