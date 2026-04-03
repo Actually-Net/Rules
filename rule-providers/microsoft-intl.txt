@@ -50,3 +50,4 @@ payload:
   - DOMAIN-SUFFIX,trafficmanager.net
   - DOMAIN-SUFFIX,powerapps.com
   - DOMAIN-SUFFIX,powerplatform.com
+  - DOMAIN-SUFFIX,vscode-cdn.net
