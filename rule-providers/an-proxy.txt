@@ -6,4 +6,11 @@ payload:
   # DIY
   - DOMAIN,v2rayse.com
   - DOMAIN-SUFFIX,github.io
+  
+
+  # 海外大站
+  - GEOSITE,twitter
+  - GEOSITE,pixiv
   - GEOSITE,github
+  # 学术站点中的非中国区域内容
+  - GEOSITE,category-scholar-!cn
