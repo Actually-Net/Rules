@@ -67,3 +67,39 @@ payload:
   - DOMAIN-SUFFIX,sndcdn.com
   - DOMAIN-SUFFIX,vimeo.com
   - DOMAIN-SUFFIX,vimeocdn.com
+
+  #  Netflix 奈飞纯享原生解锁路线
+  - GEOSITE,netflix
+
+  #  YouTube 视听串流大库 
+  - GEOSITE,youtube
+
+  #  Disney+ 串流
+  - GEOSITE,disney
+
+  #  Hulu 频道
+  - GEOSITE,hulu
+  
+  #  HBO 频道
+  - GEOSITE,hbo
+  
+  #  Spotify 音乐播客外网分发池
+  - GEOSITE,spotify
+
+  #  Tiktok 字节国际版 (对节点 IP 极度敏感，放于此处与下方 Bytedance 剥离)
+  - GEOSITE,tiktok
+
+  #  Twitch 直播星
+  - GEOSITE,twitch
+
+  #  B站海外港澳台特供分站（专用来解锁看港澳台特许受限番剧，不受上方 B站主直连库影响）
+  - GEOSITE,biliintl
+
+  #  e-Hentai 高清二次元禁限漫库 (防止与通用海外大池拥堵)
+  - GEOSITE,ehentai
+
+  #  Pixiv 全球插画专站
+  - GEOSITE,pixiv
+
+  #  通用代理媒体库与其他 (兜底一些零碎的外网云传流媒体和图床)
+  - GEOSITE,proxymedia
