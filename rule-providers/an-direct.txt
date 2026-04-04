@@ -18,7 +18,6 @@ payload:
   - GEOSITE,tencent
 
   #  DIY
-  - DOMAIN-SUFFIX,actually.vip
   - DOMAIN-SUFFIX,onejailbreak.com
   - DOMAIN-SUFFIX,gs.com
   - DOMAIN-SUFFIX,gamesci.com.cn
