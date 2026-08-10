@@ -14,7 +14,7 @@ ipv6: false
 external-controller: 127.0.0.1:9090
 secret: "809050203040"  #  密钥根据需求自己改
 external-ui: ui
-external-ui-name: dist
+external-ui-name: zashboard
 external-ui-url: "https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip"
 
 #  配置持久化
@@ -93,6 +93,8 @@ dns:
     #  部分内网预留
     - '+.gs.com'
     - '+.gamesci.com.cn'
+    - '+.gamesci.cn'
+    - '+.heishenhua.com'
     - '+.weike.fm'
     - '+.goweike.cn'
     #  STUN / 游戏机 / 语音通话
@@ -108,8 +110,12 @@ dns:
   nameserver-policy:
     #  拦截广告域名解析
     'geosite:category-ads-all': 1.0.1.1#REJECT
+    #  预留配置
     '+.gs.com': '192.168.20.201#DIRECT'
     '+.gamesci.com.cn': '192.168.20.201#DIRECT'
+    '+.gamesci.cn': '192.168.20.201#DIRECT'
+    '+.heishenhua.com': '192.168.20.201#DIRECT'
+    '+.goweike.cn': '119.29.29.29#DIRECT'
 
   #  主要 DNS 服务器
   nameserver:
@@ -150,6 +156,10 @@ sniffer:
     - '+.push.apple.com'
     - '+.gs.com'
     - '+.gamesci.com.cn'
+    - '+.gamesci.cn'
+    - '+.heishenhua.com'
+    - '+.weike.fm'
+    - '+.goweike.cn'
 
 #  ============================================================================
 #  代理组配置
