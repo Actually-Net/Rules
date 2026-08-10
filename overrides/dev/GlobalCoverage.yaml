@@ -476,7 +476,7 @@ rule-providers:
 
   an-ai:
     type: http
-    behavior: classical
+    behavior: domain
     format: yaml
     url: https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/rule-providers/an-ai.txt
     path: ./ruleset/Actually-Net/an-ai.yaml
@@ -484,7 +484,7 @@ rule-providers:
 
   an-tiktok:
     type: http
-    behavior: classical
+    behavior: domain
     format: yaml
     url: https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/rule-providers/an-tiktok.txt
     path: ./ruleset/Actually-Net/an-tiktok.yaml
@@ -500,7 +500,7 @@ rule-providers:
 
   an-bahamut:
     type: http
-    behavior: classical
+    behavior: domain
     format: yaml
     url: https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/rule-providers/an-bahamut.txt
     path: ./ruleset/Actually-Net/an-bahamut.yaml
@@ -508,7 +508,7 @@ rule-providers:
 
   media-cn:
     type: http
-    behavior: classical
+    behavior: domain
     format: yaml
     url: https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/rule-providers/media-cn.txt
     path: ./ruleset/Actually-Net/media-cn.yaml
@@ -516,7 +516,7 @@ rule-providers:
 
   media-intl:
     type: http
-    behavior: classical
+    behavior: domain
     format: yaml
     url: https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/rule-providers/media-intl.txt
     path: ./ruleset/Actually-Net/media-intl.yaml
@@ -524,7 +524,7 @@ rule-providers:
 
   an-youtube:
     type: http
-    behavior: classical
+    behavior: domain
     format: yaml
     url: https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/rule-providers/an-youtube.txt
     path: ./ruleset/Actually-Net/an-youtube.yaml
@@ -532,7 +532,7 @@ rule-providers:
 
   an-google:
     type: http
-    behavior: classical
+    behavior: domain
     format: yaml
     url: https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/rule-providers/an-google.txt
     path: ./ruleset/Actually-Net/an-google.yaml
@@ -540,7 +540,7 @@ rule-providers:
 
   microsoft-cn:
     type: http
-    behavior: classical
+    behavior: domain
     format: yaml
     url: https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/rule-providers/microsoft-cn.txt
     path: ./ruleset/Actually-Net/microsoft-cn.yaml
@@ -548,7 +548,7 @@ rule-providers:
 
   microsoft-intl:
     type: http
-    behavior: classical
+    behavior: domain
     format: yaml
     url: https://fastly.jsdelivr.net/gh/Actually-Net/rules@main/rule-providers/microsoft-intl.txt
     path: ./ruleset/Actually-Net/microsoft-intl.yaml
